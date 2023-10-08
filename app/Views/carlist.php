@@ -85,7 +85,7 @@
                         </div>
                         <div class="col-lg-2 col-12 text-center">
                             <h3>₹ 1690/-</h3>
-                            <button class="btn btn-danger book-btn">Book Now</button>
+                            <button id="carview" data-view_id="100" class="carview btn btn-danger book-btn">Book Now</button>
                         </div>
                     </div>
                     <div class="shadow-sm p-3 mb-2 bg-body-tertiary rounded d-flex flex-wrap align-items-center">
@@ -123,7 +123,7 @@
                         </div>
                         <div class="col-lg-2 col-12 text-center">
                             <h3>₹ 1690/-</h3>
-                            <button class="btn btn-danger book-btn">Book Now</button>
+                            <button id="carview" data-view_id="100" class="carview btn btn-danger book-btn">Book Now</button>
                         </div>
                     </div>
                     <div class="shadow-sm p-3 mb-2 bg-body-tertiary rounded d-flex flex-wrap align-items-center">
@@ -161,7 +161,7 @@
                         </div>
                         <div class="col-lg-2 col-12 text-center">
                             <h3>₹ 1690/-</h3>
-                            <button class="btn btn-danger book-btn">Book Now</button>
+                            <button id="carview" data-view_id="100" class="carview btn btn-danger book-btn">Book Now</button>
                         </div>
                     </div>
                     <div class="shadow-sm p-3 mb-2 bg-body-tertiary rounded d-flex flex-wrap align-items-center">
@@ -199,7 +199,7 @@
                         </div>
                         <div class="col-lg-2 col-12 text-center">
                             <h3>₹ 1690/-</h3>
-                            <button class="btn btn-danger book-btn">Book Now</button>
+                            <button id="carview" data-view_id="100" class="carview btn btn-danger book-btn">Book Now</button>
                         </div>
                     </div>
                     <div class="shadow-sm p-3 mb-2 bg-body-tertiary rounded d-flex flex-wrap align-items-center">
@@ -237,7 +237,7 @@
                         </div>
                         <div class="col-lg-2 col-12 text-center">
                             <h3>₹ 1690/-</h3>
-                            <button class="btn btn-danger book-btn">Book Now</button>
+                            <button id="carview" data-view_id="100" class="carview btn btn-danger book-btn">Book Now</button>
                         </div>
                     </div>
                     <div class="shadow-sm p-3 mb-2 bg-body-tertiary rounded d-flex flex-wrap align-items-center">
@@ -275,7 +275,7 @@
                         </div>
                         <div class="col-lg-2 col-12 text-center">
                             <h3>₹ 1690/-</h3>
-                            <button class="btn btn-danger book-btn">Book Now</button>
+                            <button id="carview" data-view_id="100" class="carview btn btn-danger book-btn">Book Now</button>
                         </div>
                     </div>
                     <div class="shadow-sm p-3 mb-2 bg-body-tertiary rounded d-flex flex-wrap align-items-center">
@@ -346,3 +346,12 @@
 </section>
 
 <?php include 'partials/footer.php'; ?>
+
+<script>
+    $(document).ready(function () {
+        $('body').on('click','.carview',function () {
+            var view_id = $(this).attr('data-view_id');
+            console.log(view_id);
+        });
+    });
+</script>

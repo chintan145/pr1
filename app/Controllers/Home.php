@@ -22,6 +22,9 @@ class Home extends BaseController
     public function myorder() {
         return view('myorder');
     }
+    public function carview() {
+        return view('carview');
+    }
     public function register() {
         return view('register');
     }
